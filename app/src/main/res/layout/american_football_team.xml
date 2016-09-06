@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/team_name__text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textColor="#616161"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/team_score__text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+        android:textSize="56sp"/>
+
+    <Button
+        android:id="@+id/field_goal__button"
+        style="@style/TeamButton"
+        android:text="@string/field_goal" />
+
+    <Button
+        android:id="@+id/touchdown__button"
+        style="@style/TeamButton"
+        android:text="@string/touchdown" />
+
+    <Button
+        android:id="@+id/extra_point_1__button"
+        style="@style/TeamButton"
+        android:text="@string/extra_point_1" />
+
+    <Button
+        android:id="@+id/extra_point_2__button"
+        style="@style/TeamButton"
+        android:text="@string/extra_point_2" />
+
+    <Button
+        android:id="@+id/safety__button"
+        style="@style/TeamButton"
+        android:text="@string/safety" />
+
+</LinearLayout>
