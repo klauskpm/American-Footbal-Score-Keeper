@@ -15,6 +15,12 @@ public class AmericanFootballTeam extends Team {
     final int EXTRA_2_POINTS = 2;
     final int SAFETY_POINTS = 2;
 
+    /**
+     * Gives American Football score options
+     *
+     * @param activity Parent activity for template controll
+     * @param teamName Team name
+     */
     public AmericanFootballTeam(AppCompatActivity activity, String teamName) {
         super(activity, R.layout.american_football_team, teamName);
 
@@ -60,22 +66,37 @@ public class AmericanFootballTeam extends Team {
         });
     }
 
+    /**
+     * Register a field goal
+     */
     public void doFieldGoal() {
         addPoints(FIELD_GOAL_POINTS);
     }
 
+    /**
+     * Register a touchdown
+     */
     public void doTouchdown() {
         addPoints(TOUCHDOWN_POINTS);
     }
 
+    /**
+     * Register one extra point
+     */
     public void doExtra1() {
         addPoints(EXTRA_1_POINTS);
     }
 
+    /**
+     * Register two extra points
+     */
     public void doExtra2() {
         addPoints(EXTRA_2_POINTS);
     }
 
+    /**
+     * Register a safety
+     */
     public void doSafety() {
         addPoints(SAFETY_POINTS);
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">American Footbal</string>
+    <string name="app_name">American Footbal Score Keeper</string>
     <string name="touchdown">Touchdown</string>
     <string name="field_goal">Field Goal</string>
     <string name="extra_point_1">Extra Point(+1)</string>

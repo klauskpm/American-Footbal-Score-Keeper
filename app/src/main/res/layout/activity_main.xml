@@ -39,7 +39,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
         android:background="@color/colorPrimary"
-        android:onClick="reset"
+        android:onClick="resetScore"
         android:text="@string/reset_score"
-        android:textColor="@android:color/primary_text_dark"/>
+        android:textColor="@android:color/primary_text_dark"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"/>
 </RelativeLayout>

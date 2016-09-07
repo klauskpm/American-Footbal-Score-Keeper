@@ -18,14 +18,19 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout viewGroupTeamA = (LinearLayout) findViewById(R.id.team_a);
         LinearLayout viewGroupTeamB = (LinearLayout) findViewById(R.id.team_b);
 
-        AmericanFootballTeamA = new AmericanFootballTeam(this, "49ers");
-        AmericanFootballTeamB = new AmericanFootballTeam(this, "Chicago Bulls");
+        AmericanFootballTeamA = new AmericanFootballTeam(this, "San Francisco 49ers");
+        AmericanFootballTeamB = new AmericanFootballTeam(this, "Philadelphia Eagles");
 
         viewGroupTeamA.addView(AmericanFootballTeamA.template);
         viewGroupTeamB.addView(AmericanFootballTeamB.template);
     }
 
-    public void reset(View v) {
+    /**
+     * Reset the score of both teams
+     *
+     * @param v
+     */
+    public void resetScore(View v) {
         AmericanFootballTeamA.reset();
         AmericanFootballTeamB.reset();
     }

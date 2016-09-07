@@ -16,6 +16,13 @@ public class Team {
     private TextView teamScoreTextView;
     private int teamScore = 0;
 
+    /**
+     * Prepare the team template for any desired sport
+     *
+     * @param activity Parent Activity
+     * @param teamLayout Team Layout ID
+     * @param teamName Team Name
+     */
     public Team (AppCompatActivity activity, int teamLayout, String teamName) {
         template = getTemplate(activity, teamLayout);
 
@@ -26,6 +33,13 @@ public class Team {
         teamScoreTextView.setText("" + teamScore);
     }
 
+    /**
+     * Get the team template and sets it to fit the screen
+     *
+     * @param activity Parent Activity
+     * @param teamLayout Team Layout ID
+     * @return Team template as a LinearLayout
+     */
     private LinearLayout getTemplate(AppCompatActivity activity, int teamLayout) {
         LinearLayout template = (LinearLayout) activity.getLayoutInflater().inflate(
                 teamLayout,
@@ -41,6 +55,11 @@ public class Team {
         return template;
     }
 
+    /**
+     * Add points to the score
+     *
+     * @param points Desired points to add
+     */
     protected void addPoints(int points) {
         teamScore += points;
 
@@ -49,7 +68,7 @@ public class Team {
 
 
     /**
-     * Reseta o score(teamScore) para 0
+     * Resets the team score to 0
      */
     public void reset() {
         teamScore = 0;
